@@ -19,10 +19,10 @@ newFeatures.names <- gsub('[-()]', '', newFeatures.names)
 
 
 # Load the datasets
-train <- read.table("UCI HAR Dataset/train/X_train.txt")[newFeatures]
-trainActivities <- read.table("UCI HAR Dataset/train/Y_train.txt")
-trainSubjects <- read.table("UCI HAR Dataset/train/subject_train.txt")
-train <- cbind(trainSubjects, trainActivities, train)
+X_train <- read.table("UCI HAR Dataset/train/X_train.txt")[newFeatures]
+Y_train <- read.table("UCI HAR Dataset/train/Y_train.txt")
+subject_train <- read.table("UCI HAR Dataset/train/subject_train.txt")
+train <- cbind(subject_train, Y_train, X_train)
 
 test <- read.table("UCI HAR Dataset/test/X_test.txt")[newFeatures]
 testActivities <- read.table("UCI HAR Dataset/test/Y_test.txt")
