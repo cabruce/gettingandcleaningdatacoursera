@@ -1,4 +1,6 @@
 
+#Getting and Cleaning Data Course Project
+
 Objectives:
 You should create one R script called run_analysis.R that does the following:
 
