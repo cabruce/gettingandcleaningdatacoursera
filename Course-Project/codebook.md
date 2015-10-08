@@ -6,7 +6,7 @@
 
 Variable name    | Description
 -----------------|------------
-subject          | ID the subject who performed the activity for each window sample.
+subject          | Subject ID
 activity         | Activity name
 featDomain       | Domain signal
 featInstrument   | Instrument
